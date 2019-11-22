@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ElectronicManager.Models;
 
 namespace ElectronicManager.Controllers
 {
@@ -16,8 +17,15 @@ namespace ElectronicManager.Controllers
             return View();
         }
 
+        dbQLdienTuDataContext data = new dbQLdienTuDataContext();
+
+        private List<SanPham> laySanPham()
+        {
+            return data.SanPhams.OrderByDescending(a => a.ChuDe).ToList();
+        }
         public ActionResult SanPham()
         {
+
             return View();
         }
 
