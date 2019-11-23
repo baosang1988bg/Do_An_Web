@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ElectronicManager.Models;
 
 namespace ElectronicManager.Controllers
 {
@@ -16,9 +17,12 @@ namespace ElectronicManager.Controllers
             return View();
         }
 
-        public ActionResult SanPham()
+        dbElecDataContext db = new dbElecDataContext();
+
+        public ActionResult SanPham(string m)
         {
-            return View();
+            List<SanPham> lst = db.SanPhams.Where(t => t.MaCD == m).ToList();
+            return View(lst);
         }
 
     }
