@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -129,6 +130,11 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbElec.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbElec.dbml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -233,6 +239,65 @@
     <Content Include="Content\images\view_4.jpg" />
     <Content Include="Content\images\view_5.jpg" />
     <Content Include="Content\images\view_6.jpg" />
+    <Content Include="Content\ImgSP\AppleiPad4GVang.jpg" />
+    <Content Include="Content\ImgSP\AppleiPhoneXRVang.jpg" />
+    <Content Include="Content\ImgSP\AppleMacbookAir2019MVFK2Retina_13.3inchesBac.jpg" />
+    <Content Include="Content\ImgSP\AppleMacbookAir_MREF2_13.3INCHESvANG.jpg" />
+    <Content Include="Content\ImgSP\BanchaiDienPhilipsSonicareTrangHong.jpg" />
+    <Content Include="Content\ImgSP\BanphimChuotLogitechMK240.png" />
+    <Content Include="Content\ImgSP\BanphimDellKB216Den.jpg" />
+    <Content Include="Content\ImgSP\BinhdunSharpEKJ_17VS_ST.jpg" />
+    <Content Include="Content\ImgSP\CameraAHDElitek_ECA50913.jpg" />
+    <Content Include="Content\ImgSP\CameraAHDElitek_ECAL10813.jpg" />
+    <Content Include="Content\ImgSP\CameraDahuaHAC_HDW1000MP_S3.jpg" />
+    <Content Include="Content\ImgSP\CameraHongngoaiDahuaDS2130FIP.jpg" />
+    <Content Include="Content\ImgSP\CameraIPElitek8710.jpg" />
+    <Content Include="Content\ImgSP\CameraIPWifiDahuaIPCC15P.jpg" />
+    <Content Include="Content\ImgSP\ChuotLogitechM590Den.jpg" />
+    <Content Include="Content\ImgSP\DieuhoaSharpAHX9VEW.jpg" />
+    <Content Include="Content\ImgSP\iPhoneXSXSMaxXamDen.jpg" />
+    <Content Include="Content\ImgSP\LaptopAsusVivobook_A512FAEJ440T_15.6inchesBac.jpg" />
+    <Content Include="Content\ImgSP\LaptopAsusX409FA_EK138T_14inchesBac.jpg" />
+    <Content Include="Content\ImgSP\LaptopDellG3_15_3590_15.6inchesDen.jpg" />
+    <Content Include="Content\ImgSP\LaptopDellInspiron358015.6inch.jpg" />
+    <Content Include="Content\ImgSP\LaptopDellVostro5481_14inches.jpg" />
+    <Content Include="Content\ImgSP\LogitechBluetoothAudioAdapter.jpg" />
+    <Content Include="Content\ImgSP\LonuongSharpEOB46RCSV_BK.jpg" />
+    <Content Include="Content\ImgSP\LovisongSharpR205VN_S.jpg" />
+    <Content Include="Content\ImgSP\ManhinhQLED4KSamsung28inchesDen.jpg" />
+    <Content Include="Content\ImgSP\MaygiatHitachiSF_120XAV_220VT.jpg" />
+    <Content Include="Content\ImgSP\MaygiatLG_FC1408S4W2.jpg" />
+    <Content Include="Content\ImgSP\MayLanhInverterLG_V13APF.jpg" />
+    <Content Include="Content\ImgSP\MayphacaphePhilipsHD7447.jpg" />
+    <Content Include="Content\ImgSP\MaySandwichPhilipisHD2393.jpg" />
+    <Content Include="Content\ImgSP\MayxayPhilipsHR2118Trang.jpg" />
+    <Content Include="Content\ImgSP\NoiapsuatDPhilipsHD2103.jpg" />
+    <Content Include="Content\ImgSP\NoichienPhilipsHD9643Den.jpg" />
+    <Content Include="Content\ImgSP\NoicomdienSharpKSHD06V.jpg" />
+    <Content Include="Content\ImgSP\OppoA1KDen.jpg" />
+    <Content Include="Content\ImgSP\OppoA5sDen.jpg" />
+    <Content Include="Content\ImgSP\OppoReno2Denlantinh.jpg" />
+    <Content Include="Content\ImgSP\SacLaptopAsusX451C.jpg" />
+    <Content Include="Content\ImgSP\SaclaptopDell19.5V_10.8A.jpg" />
+    <Content Include="Content\ImgSP\samsungA50XanhDuong.jpg" />
+    <Content Include="Content\ImgSP\samsungGalaxyNote10Hong.jpg" />
+    <Content Include="Content\ImgSP\SmartTV4KUHDSamsung50inch.jpg" />
+    <Content Include="Content\ImgSP\SmartTVHDSamsung32inch.jpg" />
+    <Content Include="Content\ImgSP\SmartTVLED_4K_HDR_Sony65inch.jpg" />
+    <Content Include="Content\ImgSP\SmartTV_4K_UHD_LG_49inch.jpg" />
+    <Content Include="Content\ImgSP\SonyPlayStationPS4Pro.jpg" />
+    <Content Include="Content\ImgSP\SSGalaxyTabALTEVang.jpg" />
+    <Content Include="Content\ImgSP\taingheAppleAirpods2ChargingCase.jpg" />
+    <Content Include="Content\ImgSP\TaingheBluetoothHeadsetSonySBH56Bac.jpg" />
+    <Content Include="Content\ImgSP\TaingheBluetoothSamsungLevelU.jpg" />
+    <Content Include="Content\ImgSP\TainghekdSonyWHCH510Xanh.jpg" />
+    <Content Include="Content\ImgSP\TaingheLogitechH110.jpg" />
+    <Content Include="Content\ImgSP\TaingheSONYWH1000XM3Den.jpg" />
+    <Content Include="Content\ImgSP\TulanhHitachiRFG560PGV7.jpg" />
+    <Content Include="Content\ImgSP\TulanhSamsungRT20HAR8DSA_SV.jpg" />
+    <Content Include="Content\ImgSP\TulanhSharpSJFX631VSL.jpg" />
+    <Content Include="Content\ImgSP\TV_LEDFullHDLG43inch.jpg" />
+    <Content Include="Content\ImgSP\VongSamSungGalaxy2019Den.jpg" />
     <Content Include="Content\js\blog_custom.js" />
     <Content Include="Content\js\blog_single_custom.js" />
     <Content Include="Content\js\cart_custom.js" />
@@ -357,6 +422,11 @@
     <Content Include="Content\plugins\slick-1.8.0\fonts\slick.eot" />
     <Content Include="Content\plugins\slick-1.8.0\fonts\slick.ttf" />
     <Content Include="Content\plugins\slick-1.8.0\fonts\slick.woff" />
+    <Content Include="Models\dbElec.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dbElec.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -385,13 +455,21 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\ChuDe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\dbElec.dbml.layout">
+      <DependentUpon>dbElec.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

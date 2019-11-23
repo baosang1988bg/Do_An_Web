@@ -11,23 +11,25 @@ namespace ElectronicManager.Controllers
     {
         //
         // GET: /Home/
+        dbElecDataContext db = new dbElecDataContext();
+
+        private List<SanPham> laySP(int count)
+        {
+            return db.SanPhams.OrderByDescending(a => a.NgayCapNhat).Take(count).ToList();
+        }
 
         public ActionResult Index()
         {
-            return View();
+            var sanpham = laySP(60);
+            return View(sanpham);
         }
 
-        dbQLdienTuDataContext data = new dbQLdienTuDataContext();
-
-        private List<SanPham> laySanPham()
+        public ActionResult ChuDe()
         {
-            return data.SanPhams.OrderByDescending(a => a.ChuDe).ToList();
+            var chude = from cd in db.ChuDes select cd;
+            return PartialView(chude);
         }
-        public ActionResult SanPham()
-        {
 
-            return View();
-        }
 
     }
 }
