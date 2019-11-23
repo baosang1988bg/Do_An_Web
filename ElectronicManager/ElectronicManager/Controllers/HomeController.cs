@@ -17,12 +17,16 @@ namespace ElectronicManager.Controllers
             return View();
         }
 
-        dbElecDataContext db = new dbElecDataContext();
+        dbQLdienTuDataContext data = new dbQLdienTuDataContext();
 
-        public ActionResult SanPham(string m)
+        private List<SanPham> laySanPham()
         {
-            List<SanPham> lst = db.SanPhams.Where(t => t.MaCD == m).ToList();
-            return View(lst);
+            return data.SanPhams.OrderByDescending(a => a.ChuDe).ToList();
+        }
+        public ActionResult SanPham()
+        {
+
+            return View();
         }
 
     }
