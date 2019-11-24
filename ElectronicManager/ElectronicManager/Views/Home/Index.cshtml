@@ -4,8 +4,6 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<link href="~/Content/styles/shop_styles.css" rel="stylesheet" />
-<link href="~/Content/styles/shop_responsive.css" rel="stylesheet" />
 
 <!-- Banner -->
 
@@ -168,7 +166,7 @@
 	                                <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="~/Content/ImgSP/@item.AnhBia" alt=""></div>
 	                                <div class="product_content">
 		                                <div class="product_price">@item.GiaBan đ</div>
-		                                <div class="product_name"><div><a href="@Url.Action("chiTiet","Home", new {id = item.MaSP } )" tabindex="0">@item.TenSP</a></div></div>
+		                                <div class="product_name"><div><a href="@Url.Action("chiTiet","Home", new {id = item.MaSP} )" tabindex="0">@item.TenSP</a></div></div>
 	                                </div>
 	                                <div class="product_fav"><i class="fas fa-heart"></i></div>
 	                                <ul class="product_marks">
@@ -213,5 +211,3 @@
     </li>
 }*@
 
-
-    <script src="~/Content/js/shop_custom.js"></script>

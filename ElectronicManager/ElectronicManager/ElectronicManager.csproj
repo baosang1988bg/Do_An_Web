@@ -128,6 +128,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -307,6 +308,8 @@
     <Content Include="Content\js\product_custom.js" />
     <Content Include="Content\js\regular_custom.js" />
     <Content Include="Content\js\shop_custom.js" />
+    <Content Include="Content\Login\login.css" />
+    <Content Include="Content\Login\login.js" />
     <Content Include="Content\plugins\easing\easing.js" />
     <Content Include="Content\plugins\fontawesome-free-5.0.1\css\fontawesome-all.css" />
     <Content Include="Content\plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.svg" />
@@ -459,6 +462,7 @@
     <Content Include="Views\Home\spMoi.cshtml" />
     <Content Include="Views\Home\ChuDeDM.cshtml" />
     <Content Include="Views\Home\ChiTiet.cshtml" />
+    <Content Include="Views\User\SignIn.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
