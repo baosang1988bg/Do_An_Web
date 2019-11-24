@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 /******************************
@@ -1970,6 +1970,7 @@ select option
 	display: none;
 	background: #0e8ce4;
 	visibility: hidden;
+    margin-left: 30px;
 	opacity: 0;
 }
 .product_discount

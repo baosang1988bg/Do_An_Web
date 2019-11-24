@@ -20,14 +20,20 @@ namespace ElectronicManager.Controllers
 
         public ActionResult Index()
         {
-            var sanpham = laySP(60);
-            return View(sanpham);
+            List<SanPham> lst = db.SanPhams.ToList();
+            return View(lst);
         }
 
         public ActionResult ChuDe()
         {
             var chude = from cd in db.ChuDes select cd;
             return PartialView(chude);
+        }
+
+        public ActionResult spMoi()
+        { 
+            var sp = laySP(16);
+            return View(sp);
         }
 
 

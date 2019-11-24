@@ -22,7 +22,7 @@ namespace ElectronicManager.Models
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QLBanHangDienTu")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QL_BanHangDienTu")]
 	public partial class dbElecDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -51,7 +51,7 @@ namespace ElectronicManager.Models
     #endregion
 		
 		public dbElecDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QLBanHangDienTuConnectionString"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QL_BanHangDienTuConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -135,9 +135,9 @@ namespace ElectronicManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaDH;
+		private int _MaDH;
 		
-		private string _MaSP;
+		private int _MaSP;
 		
 		private System.Nullable<int> _SoLuong;
 		
@@ -151,9 +151,9 @@ namespace ElectronicManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaDHChanging(string value);
+    partial void OnMaDHChanging(int value);
     partial void OnMaDHChanged();
-    partial void OnMaSPChanging(string value);
+    partial void OnMaSPChanging(int value);
     partial void OnMaSPChanged();
     partial void OnSoLuongChanging(System.Nullable<int> value);
     partial void OnSoLuongChanged();
@@ -168,8 +168,8 @@ namespace ElectronicManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDH", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaDH
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDH", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaDH
 		{
 			get
 			{
@@ -192,8 +192,8 @@ namespace ElectronicManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaSP
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaSP
 		{
 			get
 			{
@@ -283,7 +283,7 @@ namespace ElectronicManager.Models
 					}
 					else
 					{
-						this._MaSP = default(string);
+						this._MaSP = default(int);
 					}
 					this.SendPropertyChanged("SanPham");
 				}
@@ -317,7 +317,7 @@ namespace ElectronicManager.Models
 					}
 					else
 					{
-						this._MaDH = default(string);
+						this._MaDH = default(int);
 					}
 					this.SendPropertyChanged("DonHang");
 				}
@@ -351,7 +351,7 @@ namespace ElectronicManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaSP;
+		private int _MaSP;
 		
 		private string _TenSP;
 		
@@ -365,9 +365,9 @@ namespace ElectronicManager.Models
 		
 		private System.Nullable<int> _SoLuongTon;
 		
-		private string _MaCD;
+		private System.Nullable<int> _MaCD;
 		
-		private string _MaNSX;
+		private System.Nullable<int> _MaNSX;
 		
 		private EntitySet<ChiTietDonHang> _ChiTietDonHangs;
 		
@@ -379,7 +379,7 @@ namespace ElectronicManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaSPChanging(string value);
+    partial void OnMaSPChanging(int value);
     partial void OnMaSPChanged();
     partial void OnTenSPChanging(string value);
     partial void OnTenSPChanged();
@@ -393,9 +393,9 @@ namespace ElectronicManager.Models
     partial void OnAnhBiaChanged();
     partial void OnSoLuongTonChanging(System.Nullable<int> value);
     partial void OnSoLuongTonChanged();
-    partial void OnMaCDChanging(string value);
+    partial void OnMaCDChanging(System.Nullable<int> value);
     partial void OnMaCDChanged();
-    partial void OnMaNSXChanging(string value);
+    partial void OnMaNSXChanging(System.Nullable<int> value);
     partial void OnMaNSXChanged();
     #endregion
 		
@@ -407,8 +407,8 @@ namespace ElectronicManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaSP
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaSP
 		{
 			get
 			{
@@ -547,8 +547,8 @@ namespace ElectronicManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCD", DbType="NChar(10)")]
-		public string MaCD
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCD", DbType="Int")]
+		public System.Nullable<int> MaCD
 		{
 			get
 			{
@@ -571,8 +571,8 @@ namespace ElectronicManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNSX", DbType="NChar(10)")]
-		public string MaNSX
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNSX", DbType="Int")]
+		public System.Nullable<int> MaNSX
 		{
 			get
 			{
@@ -635,7 +635,7 @@ namespace ElectronicManager.Models
 					}
 					else
 					{
-						this._MaCD = default(string);
+						this._MaCD = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("ChuDe");
 				}
@@ -669,7 +669,7 @@ namespace ElectronicManager.Models
 					}
 					else
 					{
-						this._MaNSX = default(string);
+						this._MaNSX = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("NhaSanXuat");
 				}
@@ -715,7 +715,7 @@ namespace ElectronicManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaCD;
+		private int _MaCD;
 		
 		private string _TenCD;
 		
@@ -725,7 +725,7 @@ namespace ElectronicManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaCDChanging(string value);
+    partial void OnMaCDChanging(int value);
     partial void OnMaCDChanged();
     partial void OnTenCDChanging(string value);
     partial void OnTenCDChanged();
@@ -737,8 +737,8 @@ namespace ElectronicManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCD", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaCD
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCD", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaCD
 		{
 			get
 			{
@@ -829,7 +829,7 @@ namespace ElectronicManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaDH;
+		private int _MaDH;
 		
 		private System.Nullable<System.DateTime> _NgayDat;
 		
@@ -839,7 +839,7 @@ namespace ElectronicManager.Models
 		
 		private string _DaThanhToan;
 		
-		private string _MaKH;
+		private System.Nullable<int> _MaKH;
 		
 		private EntitySet<ChiTietDonHang> _ChiTietDonHangs;
 		
@@ -849,7 +849,7 @@ namespace ElectronicManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaDHChanging(string value);
+    partial void OnMaDHChanging(int value);
     partial void OnMaDHChanged();
     partial void OnNgayDatChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayDatChanged();
@@ -859,7 +859,7 @@ namespace ElectronicManager.Models
     partial void OnTinhTrangGiaoHangChanged();
     partial void OnDaThanhToanChanging(string value);
     partial void OnDaThanhToanChanged();
-    partial void OnMaKHChanging(string value);
+    partial void OnMaKHChanging(System.Nullable<int> value);
     partial void OnMaKHChanged();
     #endregion
 		
@@ -870,8 +870,8 @@ namespace ElectronicManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDH", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaDH
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDH", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaDH
 		{
 			get
 			{
@@ -970,8 +970,8 @@ namespace ElectronicManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="NChar(10)")]
-		public string MaKH
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="Int")]
+		public System.Nullable<int> MaKH
 		{
 			get
 			{
@@ -1034,7 +1034,7 @@ namespace ElectronicManager.Models
 					}
 					else
 					{
-						this._MaKH = default(string);
+						this._MaKH = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("KhachHang");
 				}
@@ -1080,7 +1080,7 @@ namespace ElectronicManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaKH;
+		private int _MaKH;
 		
 		private string _HoTen;
 		
@@ -1104,7 +1104,7 @@ namespace ElectronicManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaKHChanging(string value);
+    partial void OnMaKHChanging(int value);
     partial void OnMaKHChanged();
     partial void OnHoTenChanging(string value);
     partial void OnHoTenChanged();
@@ -1130,8 +1130,8 @@ namespace ElectronicManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaKH
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaKH
 		{
 			get
 			{
@@ -1150,7 +1150,7 @@ namespace ElectronicManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HoTen", DbType="NVarChar(50)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HoTen", DbType="NVarChar(100)")]
 		public string HoTen
 		{
 			get
@@ -1190,7 +1190,7 @@ namespace ElectronicManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GioiTinh", DbType="NVarChar(3)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GioiTinh", DbType="NVarChar(5)")]
 		public string GioiTinh
 		{
 			get
@@ -1362,7 +1362,7 @@ namespace ElectronicManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaNSX;
+		private int _MaNSX;
 		
 		private string _TenNSX;
 		
@@ -1372,7 +1372,7 @@ namespace ElectronicManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaNSXChanging(string value);
+    partial void OnMaNSXChanging(int value);
     partial void OnMaNSXChanged();
     partial void OnTenNSXChanging(string value);
     partial void OnTenNSXChanged();
@@ -1384,8 +1384,8 @@ namespace ElectronicManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNSX", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaNSX
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNSX", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaNSX
 		{
 			get
 			{
