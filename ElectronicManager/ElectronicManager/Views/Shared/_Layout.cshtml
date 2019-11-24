@@ -15,6 +15,10 @@
     <link href="~/Content/plugins/slick-1.8.0/slick.css" rel="stylesheet" />
     <link href="~/Content/styles/main_styles.css" rel="stylesheet" />
     <link href="~/Content/styles/responsive.css" rel="stylesheet" />
+    <link href="~/Content/styles/shop_styles.css" rel="stylesheet" />
+    <link href="~/Content/styles/shop_responsive.css" rel="stylesheet" />
+    <link href="~/Content/plugins/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
+
 </head>
 <body>
 
@@ -72,12 +76,12 @@
 												<span class="custom_dropdown_placeholder clc">Tất cả sản phẩm</span>
 												<i class="fas fa-chevron-down"></i>
 												<ul class="custom_list clc">
-													<li><a class="clc" href="#">All Categories</a></li>
+													@*<li><a class="clc" href="#">All Categories</a></li>
 													<li><a class="clc" href="#">Computers</a></li>
 													<li><a class="clc" href="#">Laptops</a></li>
 													<li><a class="clc" href="#">Cameras</a></li>
 													<li><a class="clc" href="#">Hardware</a></li>
-													<li><a class="clc" href="#">Smartphones</a></li>
+													<li><a class="clc" href="#">Smartphones</a></li>*@
 												</ul>
 											</div>
 										</div>
@@ -136,31 +140,6 @@
 								</div>
 
 								<ul class="cat_menu">
-									@*<li><a href="#">Computers & Laptops <i class="fas fa-chevron-right ml-auto"></i></a></li>
-									<li><a href="#">Cameras & Photos<i class="fas fa-chevron-right"></i></a></li>*@
-									@*<li class="hassubs">
-										<a href="#">Hardware<i class="fas fa-chevron-right"></i></a>
-										<ul>
-											<li class="hassubs">
-												<a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
-												<ul>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-												</ul>
-											</li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-										</ul>
-									</li>
-									<li><a href="#">Smartphones & Tablets<i class="fas fa-chevron-right"></i></a></li>
-									<li><a href="#">TV & Audio<i class="fas fa-chevron-right"></i></a></li>
-									<li><a href="#">Gadgets<i class="fas fa-chevron-right"></i></a></li>
-									<li><a href="#">Car Electronics<i class="fas fa-chevron-right"></i></a></li>
-									<li><a href="#">Video Games & Consoles<i class="fas fa-chevron-right"></i></a></li>
-									<li><a href="#">Accessories<i class="fas fa-chevron-right"></i></a></li>*@
                                     @Html.Action("Chude", "Home")
 								</ul>
 							</div>
@@ -479,5 +458,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="~/Content/plugins/slick-1.8.0/slick.js"></script>
     <script src="~/Content/plugins/easing/easing.js"></script>
     <script src="~/Content/js/custom.js"></script>
+    <script src="~/Content/js/shop_custom.js"></script>
+    <script src="~/Content/plugins/parallax-js-master/parallax.min.js"></script>
+    <script src="~/Content/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="~/Content/plugins/Isotope/isotope.pkgd.min.js"></script>
+
+
 </body>
 </html>

@@ -30,6 +30,18 @@ namespace ElectronicManager.Controllers
             return PartialView(chude);
         }
 
+        public ActionResult ChuDeDM()
+        {
+            var chude = from cd in db.ChuDes select cd;
+            return PartialView(chude);
+        }
+
+        public ActionResult chiTiet(int id)
+        {
+            var sp = db.SanPhams.Where(m => m.MaSP == id).First();
+            return View(sp);
+        }
+
         public ActionResult spMoi()
         { 
             var sp = laySP(16);

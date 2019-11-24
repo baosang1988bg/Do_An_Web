@@ -457,6 +457,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\ChuDe.cshtml" />
     <Content Include="Views\Home\spMoi.cshtml" />
+    <Content Include="Views\Home\ChuDeDM.cshtml" />
+    <Content Include="Views\Home\ChiTiet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
