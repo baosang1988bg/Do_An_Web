@@ -23,3 +23,7 @@ D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.WebPag
 D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\obj\Debug\ElectronicManager.csprojResolveAssemblyReference.cache
 D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\obj\Debug\ElectronicManager.dll
 D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\obj\Debug\ElectronicManager.pdb
+D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.dll
+D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.Mvc.dll
+D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.xml
+D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.Mvc.xml

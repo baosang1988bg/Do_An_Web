@@ -18,21 +18,45 @@
 				<!-- Images -->
 				<div class="col-lg-2 order-lg-1 order-2">
 					<ul class="image_list">
-						<li data-image="~/Content/ImgSP/@Model.AnhBia"><img src="~/Content/ImgSP/@Model.AnhBia" alt=""></li>
-						<li data-image="~/Content/ImgSP/@Model.AnhBia"><img src="~/Content/ImgSP/@Model.AnhBia" alt=""></li>
-						<li data-image="~/Content/ImgSP/@Model.AnhBia"><img src="~/Content/ImgSP/@Model.AnhBia" alt=""></li>
+						<li data-image="~/Content/ImgSP/@Model.AnhBia" onclick="changeImg()"><img src="~/Content/ImgSP/@Model.AnhBia" alt="" id="hinh1"></li>
+						<li data-image="~/Content/ImgSP/@Model.AnhMoTa1" onclick="changeImg()"><img src="~/Content/ImgSP/@Model.AnhMoTa1" alt="" id="hinh2"></li>
+						<li data-image="~/Content/ImgSP/@Model.AnhMoTa2" onclick="changeImg()"><img src="~/Content/ImgSP/@Model.AnhMoTa2" alt="" id="hinh3"></li>
 					</ul>
 				</div>
 
+                <script>
+                    function changeImage() {
+                        var image = document.getElementById('viewImg');
+                        if (image.src.match("~/Content/ImgSP/@Model.AnhBia")) {
+                            image.src = "~/Content/ImgSP/@Model.AnhMoTa1";
+                        }
+                        else {
+                            image.src = "~/Content/ImgSP/@Model.AnhMoTa2";
+                        }
+                    }
+                    function changeImg() {
+                        var img1 = document.getElementById('hinh1');
+                        var img2 = document.getElementById('hinh2');
+                        var img3 = document.getElementById('hinh3');
+                        var img = document.getElementById('viewImg');
+                        if (img.src.match("~/Content/ImgSP/@Model.AnhBia")) {
+                            img.src = "~/Content/ImgSP/@Model.AnhMoTa1";
+                        }
+                        else {
+                            img.src = "~/Content/ImgSP/@Model.AnhBia"
+                        }
+                    }
+                </script>
+
 				<!-- Selected Image -->
 				<div class="col-lg-5 order-lg-2 order-1">
-					<div class="image_selected"><img src="~/Content/ImgSP/@Model.AnhBia" alt=""></div>
+					<div class="image_selected"><img src="~/Content/ImgSP/@Model.AnhBia" id="viewImg" alt=""></div>
 				</div>
 
 				<!-- Description -->
 				<div class="col-lg-5 order-3">
 					<div class="product_description">
-						<div class="product_category">Laptops</div>
+						<div class="product_category">@Model.MaCD</div>
 						<div class="product_name">MacBook Air 13</div>
 						<div class="rating_r rating_r_4 product_rating"><i></i><i></i><i></i><i></i><i></i></div>
 						<div class="product_text"><p>@Model.MoTa</p></div>

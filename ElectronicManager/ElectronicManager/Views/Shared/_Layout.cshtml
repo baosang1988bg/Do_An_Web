@@ -41,8 +41,8 @@
 							
 							<div class="top_bar_user">
 								<div class="user_icon"><img src="~/Content/images/user.svg" alt=""></div>
-								<div><a href="@Url.Action("SignIn","User")">Đăng ký</a></div>
-								<div><a href="#">Đăng nhập</a></div>
+								<div><a href="@Url.Action("DangKy","Home")">Đăng ký</a></div>
+								<div><a href="@Url.Action("DangNhap","Home")">Đăng nhập</a></div>
 							</div>
 						</div>
 					</div>
@@ -193,8 +193,8 @@
 											<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
 										</ul>
 									</li>*@
-									<li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-									<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+									<li><a href="#">Blog<i class="fas fa-chevron-down"></i></a></li>
+									<li><a href="#">Contact<i class="fas fa-chevron-down"></i></a></li>
 								</ul>
 							</div>
 
@@ -340,6 +340,30 @@
 		</div>
 	</div> 
 
+    <!-- Newsletter -->
+
+	<div class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="newsletter_container d-flex flex-lg-row flex-column align-items-lg-center align-items-center justify-content-lg-start justify-content-center">
+						<div class="newsletter_title_container">
+							<div class="newsletter_icon"><img src="~/Content/images/send.png" alt=""></div>
+							<div class="newsletter_title">Đăng ký nhận bản tin FireFox</div>
+							<div class="newsletter_text"><p>nhận coupon giảm 20% cho lần đầu tiên mua hàng.</p></div>
+						</div>
+						<div class="newsletter_content clearfix">
+							<form action="#" class="newsletter_form">
+								<input type="email" class="newsletter_input" required="required" placeholder="nhập địa chỉ email">
+								<button class="newsletter_button">Đăng ký</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Footer -->
 
 	<footer class="footer">
@@ -349,13 +373,13 @@
 				<div class="col-lg-3 footer_col">
 					<div class="footer_column footer_contact">
 						<div class="logo_container">
-							<div class="logo"><a href="#">OneTech</a></div>
+							<div class="logo"><a href="#">FireFox</a></div>
 						</div>
-						<div class="footer_title">Got Question? Call Us 24/7</div>
-						<div class="footer_phone">+38 068 005 3570</div>
+						<div class="footer_title">Hỗ trợ trực tuyến 24/7</div>
+						<div class="footer_phone">0764 266 662</div>
 						<div class="footer_contact_text">
-							<p>17 Princess Road, London</p>
-							<p>Grester London NW18JR, UK</p>
+							<p>140 Lê Trọng Tấn, Tân Phú</p>
+							<p>305 Hậu Giang, Quận 6</p>
 						</div>
 						<div class="footer_social">
 							<ul>
@@ -371,44 +395,41 @@
 
 				<div class="col-lg-2 offset-lg-2">
 					<div class="footer_column">
-						<div class="footer_title">Find it Fast</div>
+						<div class="footer_title">Thông tin firefox</div>
 						<ul class="footer_list">
-							<li><a href="#">Computers & Laptops</a></li>
-							<li><a href="#">Cameras & Photos</a></li>
-							<li><a href="#">Hardware</a></li>
-							<li><a href="#">Smartphones & Tablets</a></li>
-							<li><a href="#">TV & Audio</a></li>
-						</ul>
-						<div class="footer_subtitle">Gadgets</div>
-						<ul class="footer_list">
-							<li><a href="#">Car Electronics</a></li>
+							<li><a href="#">Giới thiệu công ty</a></li>
+							<li><a href="#">Tìm việc làm</a></li>
+							<li><a href="#">Liên hệ, góp ý</a></li>
+							<li><a href="#">Nội quy cửa hàng</a></li>
+							<li><a href="#">In hóa đơn điện tử</a></li>
+							<li><a href="#">Bán hàng doanh nghiệp</a></li>
 						</ul>
 					</div>
 				</div>
 
 				<div class="col-lg-2">
 					<div class="footer_column">
-						<ul class="footer_list footer_list_2">
-							<li><a href="#">Video Games & Consoles</a></li>
-							<li><a href="#">Accessories</a></li>
-							<li><a href="#">Cameras & Photos</a></li>
-							<li><a href="#">Hardware</a></li>
-							<li><a href="#">Computers & Laptops</a></li>
+                        <div class="footer_title">Tổng đài hỗ trợ</div>
+						<ul class="footer_list">
+							<li><a href="#">Mua hàng : 1800.1061</a></li>
+							<li><a href="#">Kỹ thuật : 1800.1764</a></li>
+							<li><a href="#">Bảo hành : 1800.1065</a></li>
+							<li><a href="#">Khiếu nại : 1800.1063</a></li>
 						</ul>
 					</div>
 				</div>
 
 				<div class="col-lg-2">
 					<div class="footer_column">
-						<div class="footer_title">Customer Care</div>
+						<div class="footer_title">Hỗ trợ khách hàng</div>
 						<ul class="footer_list">
-							<li><a href="#">My Account</a></li>
-							<li><a href="#">Order Tracking</a></li>
-							<li><a href="#">Wish List</a></li>
-							<li><a href="#">Customer Services</a></li>
-							<li><a href="#">Returns / Exchange</a></li>
+							<li><a href="#">Tìm hiểu về mua trả góp</a></li>
+							<li><a href="#">Giao hàng, lắp đặt</a></li>
+							<li><a href="#">Bảo hành, đổi trả</a></li>
+							<li><a href="#">Trung tâm bảo hành</a></li>
+							<li><a href="#">Chất lượng phục vụ</a></li>
+							<li><a href="#">Hướng dẫn mua hàng</a></li>
 							<li><a href="#">FAQs</a></li>
-							<li><a href="#">Product Support</a></li>
 						</ul>
 					</div>
 				</div>
@@ -417,31 +438,6 @@
 		</div>
 	</footer>
 
-	<!-- Copyright -->
-
-	<div class="copyright">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					
-					<div class="copyright_container d-flex flex-sm-row flex-column align-items-center justify-content-start">
-						<div class="copyright_content"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</div>
-						<div class="logos ml-sm-auto">
-							<ul class="logos_list">
-								<li><a href="#"><img src="images/logos_1.png" alt=""></a></li>
-								<li><a href="#"><img src="images/logos_2.png" alt=""></a></li>
-								<li><a href="#"><img src="images/logos_3.png" alt=""></a></li>
-								<li><a href="#"><img src="images/logos_4.png" alt=""></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 </div>
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
