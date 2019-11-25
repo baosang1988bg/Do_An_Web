@@ -1,0 +1,20 @@
+﻿<h4>@ViewBag.ThongBao</h4>
+<table>
+    <h3>This is Login page</h3>
+    @using (Html.BeginForm())
+    { 
+        <tr>
+            <td>ten dang nhap</td>
+            <td>@Html.TextBox("TenDN")</td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td>@Html.Password("MatKhau")</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Login"/>
+            </td>
+        </tr>
+    }
+</table>

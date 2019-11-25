@@ -1,0 +1,21 @@
+﻿<table align="center">
+    <h2>Sign Up</h2>
+    @using (Html.BeginForm())
+    { 
+        <tr>
+            <td>ten</td>
+            <td>@Html.TextBox("tenUser")</td>
+        </tr>
+        <tr>
+            <td>username</td>
+            <td>@Html.TextBox("userUser")</td>
+        </tr>
+        <tr>
+            <td>mat khau</td>
+            <td>@Html.TextBox("matkhauUser")</td>
+        </tr>
+        <tr>
+            <input type="submit" value="SignUp"/>
+        </tr>
+    }
+</table>

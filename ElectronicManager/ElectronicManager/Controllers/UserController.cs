@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ElectronicManager.Models;
+
 namespace ElectronicManager.Controllers
 {
     public class UserController : Controller
@@ -25,22 +26,22 @@ namespace ElectronicManager.Controllers
         }
 
         [HttpPost]
-        public ActionResult SingIn(FormCollection col, KhachHang kh)
+        public ActionResult SingIn(TaiKhoan tk)
         {
-            var ten = col["ten"];
-            var email = col["email"];
-            var tendn = col["user"];
-            var matkhau = col["matkhau"];
+            //var ten = col["ten"];
+            //var email = col["email"];
+            //var tendn = col["user"];
+            //var matkhau = col["matkhau"];
 
-            kh.HoTen = ten;
-            kh.Email = email;
-            kh.TaiKhoan = tendn;
-            kh.MatKhau = matkhau;
+            //kh.HoTen = ten;
+            //kh.Email = email;
+            //kh.TaiKhoan = tendn;
+            //kh.MatKhau = matkhau;
 
-            db.KhachHangs.InsertOnSubmit(kh);
-            db.SubmitChanges();
+            //db.KhachHangs.InsertOnSubmit(kh);
+            //db.SubmitChanges();
 
-            return this.SignIn();
+            return View(tk);
         }
 
         public ActionResult Login()
