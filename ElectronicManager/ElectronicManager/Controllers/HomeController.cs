@@ -24,16 +24,16 @@ namespace ElectronicManager.Controllers
             return View(lst);
         }
 
-        public ActionResult ChuDe()
+        public ActionResult Loai()
         {
-            var chude = from cd in db.ChuDes select cd;
-            return PartialView(chude);
+            List<Loai> lst = db.Loais.ToList();
+            return PartialView(lst);
         }
 
         public ActionResult ChuDeDM()
         {
-            var chude = from cd in db.ChuDes select cd;
-            return PartialView(chude);
+            List<ChuDe> lst = db.ChuDes.ToList();
+            return PartialView(lst);
         }
 
         public ActionResult chiTiet(int id)
