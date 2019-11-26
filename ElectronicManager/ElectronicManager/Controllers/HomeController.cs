@@ -29,6 +29,11 @@ namespace ElectronicManager.Controllers
             List<Loai> lst = db.Loais.ToList();
             return PartialView(lst);
         }
+        public ActionResult HangNSX()
+        {
+            List<NhaSanXuat> lst = db.NhaSanXuats.ToList();
+            return PartialView(lst);
+        }
 
         public ActionResult ChuDeDM()
         {
@@ -41,13 +46,21 @@ namespace ElectronicManager.Controllers
             var sp = db.SanPhams.Where(m => m.MaSP == id).First();
             return View(sp);
         }
-
-        public ActionResult spMoi()
-        { 
-            var sp = laySP(16);
-            return View(sp);
+        public ActionResult SanPhamChuDe(int m)
+        {
+            List<SanPham> lst = db.SanPhams.Where(t => t.MaCD == m).ToList();
+            return View(lst);
         }
-
+        public ActionResult SanPhamNSX(int m)
+        {
+            List<SanPham> lst = db.SanPhams.Where(t => t.MaNSX == m).ToList();
+            return View(lst);
+        }
+        public ActionResult SanPhamLoai(int m)
+        {
+            List<SanPham> lst = db.SanPhams.Where(t => t.MaLoai == m).ToList();
+            return View(lst);
+        }
         [HttpGet]
         public ActionResult DangKy()
         {

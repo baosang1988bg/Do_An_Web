@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "HangNSX";
+    
+}
+
+@using ElectronicManager.Models;
+@model List<NhaSanXuat>
+@foreach(var a in Model)
+{
+   <li>
+       <a href="#"> @a.TenNSX</a>
+   </li>
+}

@@ -1,6 +1,7 @@
-﻿@model IEnumerable<ElectronicManager.Models.ChuDe>
+﻿@using ElectronicManager.Models;
+@model List<ChuDe>
 
 @foreach (var item in Model)
 {
-    <li><a href="@Url.Action("Index", "Home", new {id = @item.MaCD })">@item.TenCD</a></li>
+    <li><a href="@Url.Action("Index", "Home", new {m = @item.MaCD })">@item.TenCD</a></li>
 }
