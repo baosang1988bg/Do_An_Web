@@ -25,25 +25,20 @@
 				</div>
 
                 <script>
-                    function changeImage() {
-                        var image = document.getElementById('viewImg');
-                        if (image.src.match("~/Content/ImgSP/@Model.AnhBia")) {
-                            image.src = "~/Content/ImgSP/@Model.AnhMoTa1";
-                        }
-                        else {
-                            image.src = "~/Content/ImgSP/@Model.AnhMoTa2";
-                        }
-                    }
                     function changeImg() {
                         var img1 = document.getElementById('hinh1');
-                        var img2 = document.getElementById('hinh2');
-                        var img3 = document.getElementById('hinh3');
                         var img = document.getElementById('viewImg');
-                        if (img.src.match("~/Content/ImgSP/@Model.AnhBia")) {
-                            img.src = "~/Content/ImgSP/@Model.AnhMoTa1";
+                        if (img.src.match("@Model.AnhMoTa1")) {
+                            img.src = "~/Content/ImgSP/@Model.AnhBia";
+                            console.log("vao if");
+                        }
+                        else if (img.src.match("@Model.AnhMoTa2")) {
+                            img.src = "~/Content/ImgSP/@Model.AnhBia";
+                            console.log("vao else if");
                         }
                         else {
-                            img.src = "~/Content/ImgSP/@Model.AnhBia"
+                            img.src = "~/Content/ImgSP/@Model.AnhBia";
+                            console.log("vao else");
                         }
                     }
                 </script>
@@ -57,7 +52,7 @@
 				<div class="col-lg-5 order-3">
 					<div class="product_description">
 						<div class="product_category">@Model.MaCD</div>
-						<div class="product_name">MacBook Air 13</div>
+						<div class="product_name">@Model.TenSP</div>
 						<div class="rating_r rating_r_4 product_rating"><i></i><i></i><i></i><i></i><i></i></div>
 						<div class="product_text"><p>@Model.MoTa</p></div>
 						<div class="order_info d-flex flex-row">

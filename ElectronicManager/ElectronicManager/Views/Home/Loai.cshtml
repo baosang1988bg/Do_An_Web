@@ -1,0 +1,6 @@
+﻿@using ElectronicManager.Models;
+@model List<Loai>
+@foreach (var a in Model)
+{
+    <li > <a href="@Url.Action("MaLoai")" >@a.TenLoai </a> </li> 
+}
