@@ -27,3 +27,38 @@ D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.dll
 D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.Mvc.dll
 D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.xml
 D:\Do_An_Web\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.Mvc.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\ElectronicManager.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\ElectronicManager.pdb
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\Antlr3.Runtime.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\EntityFramework.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\Newtonsoft.Json.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.Mvc.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Net.Http.Formatting.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.Http.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.Http.WebHost.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.Mvc.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.Optimization.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.Providers.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.Razor.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.WebPages.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\WebGrease.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\PagedList.Mvc.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\EntityFramework.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\Newtonsoft.Json.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Net.Http.Formatting.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.Http.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.Http.WebHost.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.Mvc.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.Razor.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.WebPages.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\obj\Debug\ElectronicManager.csprojResolveAssemblyReference.cache
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\obj\Debug\ElectronicManager.dll
+C:\Users\DELL-PC\Desktop\Công Nghệ Web\web DienTu\Do_An_Web\ElectronicManager\ElectronicManager\obj\Debug\ElectronicManager.pdb

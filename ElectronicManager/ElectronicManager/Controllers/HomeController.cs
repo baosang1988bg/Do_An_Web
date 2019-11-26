@@ -24,16 +24,15 @@ namespace ElectronicManager.Controllers
             return View(lst);
         }
 
-        public ActionResult ChuDe()
-        {
-            var chude = from cd in db.ChuDes select cd;
-            return PartialView(chude);
-        }
-
         public ActionResult ChuDeDM()
         {
-            var chude = from cd in db.ChuDes select cd;
-            return PartialView(chude);
+            List<ChuDe> lst = db.ChuDes.ToList();
+            return View(lst);
+        }
+        public ActionResult Loai()
+        {
+            List<Loai> lst = db.Loais.ToList();
+            return View(lst);
         }
 
         public ActionResult chiTiet(int id)
@@ -42,11 +41,7 @@ namespace ElectronicManager.Controllers
             return View(sp);
         }
 
-        public ActionResult spMoi()
-        { 
-            var sp = laySP(16);
-            return View(sp);
-        }
+      
 
         [HttpGet]
         public ActionResult DangKy()

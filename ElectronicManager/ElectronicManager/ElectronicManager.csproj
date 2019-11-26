@@ -466,8 +466,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\ChuDe.cshtml" />
-    <Content Include="Views\Home\spMoi.cshtml" />
     <Content Include="Views\Home\ChuDeDM.cshtml" />
     <Content Include="Views\Home\ChiTiet.cshtml" />
     <Content Include="Views\User\SignIn.cshtml" />
