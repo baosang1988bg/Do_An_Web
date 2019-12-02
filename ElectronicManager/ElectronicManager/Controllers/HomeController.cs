@@ -25,6 +25,10 @@ namespace ElectronicManager.Controllers
 
         public ActionResult Index(int ? page)
         {
+            if (Session["DN"] == null)
+            {
+                Session["DN"] = @Url.Action("DangNhap");
+            }
             int pageSize = 10;
             int pageNum = (page ?? 1);
 
@@ -32,7 +36,14 @@ namespace ElectronicManager.Controllers
             List<SanPham> lst = db.SanPhams.ToList();
             return View(spmoi.ToPagedList(pageNum, pageSize));
         }
-
+        public ActionResult DangXuat()
+        {
+            string s = @Url.Action("DangNhap");
+            @Session["DX"] = "";
+            @Session["TK"] = "";
+            @Session["DN"] = s;
+            return RedirectToAction("Index", "Home");
+        }
         public ActionResult Loai()
         {
             List<Loai> lst = db.Loais.ToList();
@@ -126,7 +137,10 @@ namespace ElectronicManager.Controllers
                 KhachHang kh = db.KhachHangs.SingleOrDefault(n => n.TaiKhoan == tendn && n.MatKhau == mk);
                 if (kh != null)
                 {
-                    Session["TaiKhoan"] = kh;
+                    @Session["TK"] = kh.HoTen;
+                    @Session["Taikhoan"] = kh;
+                    @Session["DX"] = "Đăng xuất";
+                    @Session["DN"] = "";
                     ViewBag.ThongBao = "Thành công";
                     return RedirectToAction("Index","Home");
                 }

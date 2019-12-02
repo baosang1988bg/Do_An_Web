@@ -481,6 +481,8 @@
     <Content Include="Views\GioHang\GioHangPartical.cshtml" />
     <Content Include="Views\GioHang\DatHang.cshtml" />
     <Content Include="Views\GioHang\Xacnhandonhang.cshtml" />
+    <Content Include="Views\Home\SanPhamNSX.cshtml" />
+    <Content Include="Views\Home\SanPhamLoai.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
