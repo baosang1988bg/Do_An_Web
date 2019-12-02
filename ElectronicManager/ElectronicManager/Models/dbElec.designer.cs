@@ -959,9 +959,9 @@ namespace ElectronicManager.Models
 		
 		private System.Nullable<System.DateTime> _NgayGiao;
 		
-		private System.Nullable<int> _TinhTrangGiaoHang;
+		private System.Nullable<bool> _TinhTrangGiaoHang;
 		
-		private string _DaThanhToan;
+		private System.Nullable<bool> _DaThanhToan;
 		
 		private System.Nullable<int> _MaKH;
 		
@@ -979,9 +979,9 @@ namespace ElectronicManager.Models
     partial void OnNgayDatChanged();
     partial void OnNgayGiaoChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayGiaoChanged();
-    partial void OnTinhTrangGiaoHangChanging(System.Nullable<int> value);
+    partial void OnTinhTrangGiaoHangChanging(System.Nullable<bool> value);
     partial void OnTinhTrangGiaoHangChanged();
-    partial void OnDaThanhToanChanging(string value);
+    partial void OnDaThanhToanChanging(System.Nullable<bool> value);
     partial void OnDaThanhToanChanged();
     partial void OnMaKHChanging(System.Nullable<int> value);
     partial void OnMaKHChanged();
@@ -1054,8 +1054,8 @@ namespace ElectronicManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TinhTrangGiaoHang", DbType="Int")]
-		public System.Nullable<int> TinhTrangGiaoHang
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TinhTrangGiaoHang", DbType="Bit")]
+		public System.Nullable<bool> TinhTrangGiaoHang
 		{
 			get
 			{
@@ -1074,8 +1074,8 @@ namespace ElectronicManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DaThanhToan", DbType="NVarChar(50)")]
-		public string DaThanhToan
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DaThanhToan", DbType="Bit")]
+		public System.Nullable<bool> DaThanhToan
 		{
 			get
 			{

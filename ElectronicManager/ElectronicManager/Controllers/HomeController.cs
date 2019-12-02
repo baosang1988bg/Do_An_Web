@@ -6,6 +6,9 @@ using System.Web.Mvc;
 using ElectronicManager.Models;
 using ElectronicManager.Controllers;
 
+using PagedList;
+using PagedList.Mvc;
+
 namespace ElectronicManager.Controllers
 {
     public class HomeController : Controller
@@ -20,10 +23,14 @@ namespace ElectronicManager.Controllers
             return db.SanPhams.OrderByDescending(a => a.NgayCapNhat).Take(count).ToList();
         }
 
-        public ActionResult Index()
+        public ActionResult Index(int ? page)
         {
+            int pageSize = 10;
+            int pageNum = (page ?? 1);
+
+            var spmoi = laySP(50);
             List<SanPham> lst = db.SanPhams.ToList();
-            return View(lst);
+            return View(spmoi.ToPagedList(pageNum, pageSize));
         }
 
         public ActionResult Loai()

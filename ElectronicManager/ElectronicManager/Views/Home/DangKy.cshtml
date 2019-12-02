@@ -1,21 +1,21 @@
 ﻿<table align="center">
-    <h2>Sign Up</h2>
+    <h2>Trang đăng ký</h2>
     @using (Html.BeginForm())
     { 
         <tr>
-            <td>ten</td>
+            <td>Họ và tên </td>
             <td>@Html.TextBox("tenUser")</td>
         </tr>
         <tr>
-            <td>username</td>
+            <td>Tên đăng nhập </td>
             <td>@Html.TextBox("userUser")</td>
         </tr>
         <tr>
-            <td>mat khau</td>
+            <td>Mật khẩu </td>
             <td>@Html.TextBox("matkhauUser")</td>
         </tr>
         <tr>
-            <input type="submit" value="SignUp"/>
+            <input type="submit" value="Đăng ký"/>
         </tr>
     }
 </table>

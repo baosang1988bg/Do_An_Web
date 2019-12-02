@@ -140,10 +140,23 @@ namespace ElectronicManager.Controllers
             List<GioHang> gh = layGioHang();
             dh.MaKH = kh.MaKH;
             dh.NgayDat = DateTime.Now;
-            //dh.DaThanhToan = false;
-            //dh.TinhTrangGiaoHang = false;
+            dh.DaThanhToan = false;
+            dh.TinhTrangGiaoHang = false;
+            data.DonHangs.InsertOnSubmit(dh);
+            data.SubmitChanges();
 
+            foreach (var item in gh)
+            {
+                ChiTietDonHang ctdh = new ChiTietDonHang();
+                ctdh.MaDH = dh.MaDH;
+                ctdh.MaSP = item.iMaSP;
+                ctdh.SoLuong = item.iSoLuong;
+                ctdh.DonGia = (decimal)item.dDonGia;
+                data.ChiTietDonHangs.InsertOnSubmit(ctdh);
+            }
 
+            data.SubmitChanges();
+            Session["Giohang"] = null;
             return RedirectToAction("Xacnhandonhang", "Giohang");
         }
 
