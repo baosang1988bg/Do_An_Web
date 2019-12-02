@@ -1,0 +1,45 @@
+﻿@using ElectronicManager.Models;
+@model List<GioHang>
+
+@{
+    ViewBag.Title = "GioHang";
+}
+
+<h2 style="text-align: center">THÔNG TIN GIỎ HÀNG</h2>
+<table  style="align-content:center" border="1">
+    <tr style="text-align: center; font-weight:bold">
+        <td> Mã sản phẩm </td>
+        <td> Tên sản phẩm </td>
+        <td> Ảnh sản phẩm </td>
+        <td> Số lượng </td>
+        <td> Đơn giá </td>
+        <td> Thành tiền </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr style="text-align: center; font-weight: bold">
+        <td> @item.iMaSP</td>
+        <td>@item.sTenSP</td>
+        <td><img src="~/Content/ImgSP/@item.sAnhBia" width="100px" height="120px"/></td>
+        @using (Html.BeginForm("CapnhatGioHang","Giohang", new {@iMaSp = item.iMaSP}))
+        {
+            <td>
+                <input type="number" min="1" name="txtSoLuong" value="@item.iSoLuong" style="background-color:white"/>
+            </td>
+            <td>@item.iSoLuong</td>
+            <td>@String.Format("{0:0,0}", @item.dDonGia)</td>
+            <td>@String.Format("{0:0,0}",@item.dThanhTien)</td>
+            <td><a href="@Url.Action("ChiTiet", "Home", new { id = item.iMaSP })">Chi tiết</a></td>
+            <td>@Html.ActionLink("Xóa","XoaGioHang",new { @iMaSP = item.iMaSP })</td>
+            <td><input type="submit" value="Cập nhật"/></td>
+        }
+    </tr>
+    }
+    <tr style="text-align:right; font-weight:bold; color:red">
+        <td colspan="4">Số lượng sách:@ViewBag.Tongsoluong</td>
+        <td colspan="4">Tổng tiền: @String.Format("{0:0,0}", ViewBag.Tongtien) VNĐ</td>
+    </tr>
+</table>

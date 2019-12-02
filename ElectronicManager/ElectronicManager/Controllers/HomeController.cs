@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ElectronicManager.Models;
+using ElectronicManager.Controllers;
 
 namespace ElectronicManager.Controllers
 {
@@ -12,6 +13,7 @@ namespace ElectronicManager.Controllers
         //
         // GET: /Home/
         dbElecDataContext db = new dbElecDataContext();
+        GioHangController gh = new GioHangController();
 
         private List<SanPham> laySP(int count)
         {

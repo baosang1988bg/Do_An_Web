@@ -87,11 +87,13 @@
 								</div>
 
 								<div class="product_price">@Model.GiaBan đ</div>
-								<div class="button_container">
-									<button type="button" class="button cart_button">Add to Cart</button>
-									<div class="product_fav"><i class="fas fa-heart"></i></div>
+								<div class="button_container" id="Datmua">
+									<button type="button" class="button cart_button">
+                                        <a href="@Url.Action("ThemGioHang", "GioHang", new { @iMaSP = @Model.MaSP, @strUrl = Request.Url.ToString() })">
+                                            Thêm vào giỏ hàng
+                                        </a>
+									</button>
 								</div>
-								
 							</form>
 						</div>
 					</div>
