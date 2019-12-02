@@ -115,5 +115,42 @@ namespace ElectronicManager.Controllers
             }
             return RedirectToAction("GioHang");
         }
+
+        [HttpGet]
+        public ActionResult DatHang()
+        {
+            if (Session["Taikhoan"] == null || Session["Taikhoan"].ToString() == "")
+            {
+                return RedirectToAction("DangNhap", "Home");
+            }
+            if (Session["Giohang"] == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            List<GioHang> lstGioHang = layGioHang();
+            ViewBag.Tongsoluong = TongSoLuong();
+            ViewBag.Tongtien = TongTien();
+            return View(lstGioHang);
+        }
+
+        public ActionResult DatHang(FormatException col)
+        { 
+            DonHang dh = new DonHang();
+            KhachHang kh = (KhachHang)Session["Taikhoan"];
+            List<GioHang> gh = layGioHang();
+            dh.MaKH = kh.MaKH;
+            dh.NgayDat = DateTime.Now;
+            //dh.DaThanhToan = false;
+            //dh.TinhTrangGiaoHang = false;
+
+
+            return RedirectToAction("Xacnhandonhang", "Giohang");
+        }
+
+        public ActionResult Xacnhandonhang()
+        {
+            return View();
+        }
+
     }
 }

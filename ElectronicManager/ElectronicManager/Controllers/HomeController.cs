@@ -108,11 +108,11 @@ namespace ElectronicManager.Controllers
             var mk = col["MatKhau"];
             if (String.IsNullOrEmpty(tendn))
             {
-                ViewData["Loi1"] = "Error";
+                ViewData["Loi1"] = "Phải nhập tên đăng nhập";
             }
             else if (String.IsNullOrEmpty(mk))
                 {
-                    ViewData["Loi2"] = "Error 2";
+                    ViewData["Loi2"] = "Phải nhập mật khẩu";
                 }
             else
             {
@@ -120,7 +120,12 @@ namespace ElectronicManager.Controllers
                 if (kh != null)
                 {
                     Session["TaiKhoan"] = kh;
-                    ViewBag.ThongBao = "thanh cong";
+                    ViewBag.ThongBao = "Thành công";
+                    return RedirectToAction("Index","Home");
+                }
+                else
+                {
+                    ViewBag.Thongbao = "Tên đăng nhập hoặc mật khẩu không đúng";
                 }
             }
             return View();

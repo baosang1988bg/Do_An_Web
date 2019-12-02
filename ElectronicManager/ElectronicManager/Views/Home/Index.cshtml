@@ -1,9 +1,12 @@
 ﻿@model IEnumerable<ElectronicManager.Models.SanPham>
-
+@*@using ElectronicManager.Models
+@model SanPham*@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+
 <div class="characteristics">
     <div class="container">
         <div class="row">
@@ -156,7 +159,7 @@
                                             <li class="product_mark product_discount"></li>
                                             <li class="product_mark product_new"></li>
                                         </ul>*@
-                                        <div class="button_container" id="Datmua">
+                                        <div class="button_container">
 									        <button type="button">
                                                 <a href="@Url.Action("chiTiet", "Home", new { id = item.MaSP })" tabindex="0">
                                                     Xem sản phẩm
